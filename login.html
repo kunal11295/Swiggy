@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        .screen
+        {
+            width: 65%;
+            height: 500px;
+            /* border: 1px solid black; */
+            margin: auto;
+            margin-top: 100px; 
+            display: flex;
+           
+        }
+        .left
+        {
+            width: 50%;
+            height: 100%;
+            /* border: 1px solid black; */
+        }
+        .left>div:nth-child(1)
+        {
+            width: 100%;
+            height: 100%;
+        }
+        .left>div:nth-child(1)>img
+        {
+            width: 100%;
+     
+            height: 100%;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        .right
+        {
+            width: 50%;
+            height: 100%;
+            /* border: 1px solid black; */
+            background-color: rgba(15,16,20,0.95);
+          background-color: #16181f;
+          border-top-right-radius: 15px;
+          border-bottom-right-radius: 15px;
+        }
+
+        .right>div:nth-child(2)>h2
+        {
+            color:white;
+            margin-left: 20px;
+           font-weight: var(--TITLE1-WEIGHT);
+            letter-spacing: var(--TITLE1-SPACING);
+            font-family:Arial, Helvetica, sans-serif;
+           
+            
+        }
+        .right>div:nth-child(1)>svg
+        {
+           
+            fill: white;
+            margin-left: 370px;
+            margin-top: 10px;
+            
+        }
+
+      .right>div:nth-child(3)
+      {
+        width: 80%;
+        height: 40px;
+        margin-left: 20px;
+        margin-top: 10px;
+        border: 1px solid gray;
+        /* text-align: center; */
+         border-radius: 8px;
+         background-color: #16181f;
+         
+      }
+      .right>div:nth-child(3) input
+      {
+        background-color: #16181f;
+        margin-top: 10px;
+      outline: none;
+        border: none;
+      }
+
+      .right>div:nth-child(4)
+      {
+        width: 80%;
+        height: 40px;
+       margin-top: 10px;
+       border: 1px solid gray ; 
+       border-radius: 5px;
+       display: flex;
+       margin-bottom: 50px;
+       margin-left: 20px;
+       background-color: #16181f;
+      }
+      .right>div:nth-child(4) input
+      {
+        background-color: #16181f;
+        margin-top: 8px;
+        border: none;
+        outline: none;
+      }
+      .right>div:nth-child(5)
+      {
+        width: 20%;
+        height: 40px;
+        border: 1px solid white;
+        margin-left: 100px;
+        
+      }
+      .right>div:nth-child(5)>input
+      {
+        width: 80%;
+        margin-left: 10px;
+        height: 20px;
+        background-color: #16181f;
+        border: none;
+        margin-top: 10px;
+        color: white;
+        outline: none;
+
+      }
+      
+      @media screen and (max-width: 770px) {
+        .left{
+            display: none;
+        }
+        .right
+        {
+            width: 100%;
+        }
+        .right>div:nth-child(1)>svg
+        {
+            margin-left: 430px;
+        }
+
+      }
+      </style>
+</head>
+<body>
+ <div class="screen">
+    <div class="left">
+        <div>
+            <img src="WhatsApp Image 2023-04-15 at 6.49.38 PM.jpeg">
+        </div>
+    </div>
+    <div class="right">
+            <div>
+                <svg width="40" fill="#510505" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M5.152 5.152a1.2 1.2 0 0 1 1.696 0L12 10.303l5.152-5.151a1.2 1.2 0 1 1 1.696 1.696L13.697 12l5.151 5.152a1.2 1.2 0 0 1-1.696 1.696L12 13.697l-5.152 5.151a1.2 1.2 0 0 1-1.696-1.696L10.303 12 5.152 6.848a1.2 1.2 0 0 1 0-1.696Z" clip-rule="evenodd"></path>
+            </div>          
+
+            <div>
+                <h2>Log in</h2>
+            </div>
+        <form onsubmit="login(event)">
+            <div>
+                <input id="useremail" type="email" placeholder="Enter the email">
+            </div>
+           <div>
+            <input id="userpassword" type="password" placeholder="enter the password">
+           </div>
+            <div>
+            <input type="submit" value="Login">
+            </div>
+        </form>
+ </div> 
+        <script src="./login.js"></script>
+</body>
+</html>

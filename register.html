@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.right
+{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid black; */
+    background-color: rgba(15,16,20,0.95);
+  background-color: #16181f;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+
+.me
+{    width: 90%;
+     margin-left: 20px;  
+    border: 1px solid gray;
+    height: 50px;  
+    margin-bottom: 20px;
+    border-radius: 8px;
+    
+}
+.me>input
+{
+    height: 30px;
+    width: 70%; 
+    margin-top: 10px;
+    margin-left: 10px; 
+    border: none;
+    background-color: #16181f;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    
+}
+.password
+{   width: 90%;
+     margin-left: 20px;
+    border: 1px solid gray;  
+    height: 50px; 
+    margin-bottom: 20px; 
+    border-radius: 8px;
+    
+}
+.password>input
+{
+    height: 30px;
+    width: 70%; 
+    margin-top: 10px;
+    margin-left: 10px; 
+    border: none;
+    background-color: #16181f;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+.btn
+{
+    text-align: center;
+   margin-top: 50px;
+    /* border: 1px solid black; */
+    width: 150px;
+    height: 40px;
+    margin: auto;
+    background-color:brown ;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 770px) {
+.left{
+    display: none;
+}
+.right
+{
+    width: 100%;
+}
+.right>div:nth-child(1)>svg
+{
+    margin-left: 430px;
+}
+}
+.username
+{
+border: 1px solid gray;
+margin-left: 20px; 
+margin-bottom: 20px;
+height: 40px;
+}
+.username input
+{
+   margin-left: 20px;
+   height:90%;
+   background-color: #16181f;
+   border: none;
+}
+.useremail
+{
+margin-left: 20px;
+margin-bottom: 20px;
+height:40px;
+border: 1px solid gray;
+}
+.useremail input
+{
+margin-left: 20px;
+   height: 90%;
+   background-color:#16181f;
+   border: none;
+}
+.title h2
+{
+color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="screen">
+<div class="left">
+    <div>
+        <img src="WhatsApp Image 2023-04-15 at 6.49.38 PM.jpeg">
+    </div>
+</div>
+<div class="right">        
+        <div class="title">
+            <h2>Register</h2>
+        </div>
+        <form onsubmit="register(event)"> 
+         <div class="username">
+            <input id="name" type="text" placeholder="Enter the name">
+         </div>
+        <div class="useremail">
+            <input id="email" type="email" placeholder="Enter email">
+        </div>
+    
+       <div class="me">
+        <input  id="password" type="password" placeholder="Enter Password">
+       </div>
+       <div class="password">
+           <input  id="confirmpassword"type="password" placeholder="Confirm Password">
+       </div>
+       <div class="btn">
+          <input type="submit" value="register"> 
+</div>
+</form>
+</div>
+</div>
+<script src="./reg.js"></script>
+</body>
+</html>
